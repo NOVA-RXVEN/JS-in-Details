@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Error Handleing In JS</h2>
+    <p>
+      Some example of <b><q>Errors</q></b> is given below.
+    </p>
+
+    <p id="error_message"></p>
+    <p id="message"></p>
+    <p id="msg"></p>
+    <h3 id="alert">welcome</h3>
+
+    <script>
+      try {
+        AndrewTape("Hlw Sir! How is your day going?");
+      } catch (err) {
+        document.getElementById("error_message").innerHTML = err.message;
+        document.getElementById("message").innerHTML = err.messag;
+      }
+      document.getElementById("msg").innerHTML =
+        "From the screen to the ring, to the pen, to the king(Not an Error,all good.)";
+
+      //alert section
+      var text = document.getElementById("alert").innerHTML;
+      alert("Example of an Alert message " + text);
+    </script>
+  </body>
+</html>
